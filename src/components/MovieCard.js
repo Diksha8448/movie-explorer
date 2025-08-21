@@ -13,7 +13,7 @@ export default function MovieCard({ movie, onToggleFavorite, isFavorite }) {
       <p>{movie.Year}</p>
 
       {/* Props drilling: Pass favorite state & handler down */}
-      <FavoriteButton
+      <FavoriteButton 
         isFavorite={isFavorite}
         onClick={() => onToggleFavorite(movie)}
       />
